@@ -23,5 +23,13 @@ alias md="mullvad disconnect"
 alias ms="mullvad status"
 alias mkdir="mkdir -pv"
 
+dot() {
+    cd ~/.dotfiles || return
+    git add .
+    git commit -m "${1:-daily}"
+    git push -u origin main
+    cd - >/dev/null || return
+}
+
 # Created by `pipx` on 2025-08-26 07:31:18
 export PATH="$PATH:/home/yv/.local/bin"
