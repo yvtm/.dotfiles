@@ -22,6 +22,8 @@ alias md="mullvad disconnect"
 alias ms="mullvad status"
 alias mkdir="mkdir -pv"
 alias dots="cd ~/.dotfiles"
+alias logout="hyprctl dispatch exit"
+alias bat="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 
 gitdots() {
     if [ "$#" -eq 0 ]; then
