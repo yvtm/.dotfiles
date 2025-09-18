@@ -24,9 +24,14 @@ alias mkdir="mkdir -pv"
 alias dots="cd ~/.dotfiles"
 
 gitdots() {
+    if [ "$#" -eq 0 ]; then
+        echo "Error: You must provide a commit message."
+        return 1
+    fi
+
     cd ~/.dotfiles || return
     git add .
-    git commit -m "${*:-daily}"
+    git commit -m "$*"
     git push -u origin main
     cd - >/dev/null || return
 }
