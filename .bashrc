@@ -22,8 +22,9 @@ alias mc="mullvad connect"
 alias md="mullvad disconnect"
 alias ms="mullvad status"
 alias mkdir="mkdir -pv"
+alias dots="cd ~/.dotfiles"
 
-dot() {
+gitdots() {
     cd ~/.dotfiles || return
     git add .
     git commit -m "${1:-daily}"
