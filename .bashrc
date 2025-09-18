@@ -13,7 +13,7 @@ alias s="yay -Ss"
 alias d="yay -S"
 alias r="yay -R"
 alias hy="nvim ~/.config/hypr/hyprland.conf"
-alias bs="sudo nvim ~/.bashrc"
+alias bs="nvim ~/.bashrc"
 alias ff="fastfetch"
 alias ls="ls -a"
 alias c="clear"
@@ -27,7 +27,7 @@ alias dots="cd ~/.dotfiles"
 gitdots() {
     cd ~/.dotfiles || return
     git add .
-    git commit -m "${1:-daily}"
+    git commit -m "${*:-daily}"
     git push -u origin main
     cd - >/dev/null || return
 }
