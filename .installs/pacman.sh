@@ -31,8 +31,16 @@ PKGS ={
   'htop'
   'wl-clipboard'
   'hyprlock'
-  'tofi'
   'neovim'
+
+  'wofi' 
+
+  'thunderbird'
+
+  'thunar'
+  'gvfs'
+  'thunar-volman'
+  
   'bitwarden'
   'github-cli'
 }
