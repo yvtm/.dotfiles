@@ -1,3 +1,4 @@
 PKGS ={
-'tofi'
+  'tofi'
+  'python-pywalfox'
 }

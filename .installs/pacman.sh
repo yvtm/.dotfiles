@@ -40,7 +40,12 @@ PKGS ={
   'thunar'
   'gvfs'
   'thunar-volman'
-  
+ 
+  'python-pip'
+  'python-pipx'
+
+  'swaync'
+
   'bitwarden'
   'github-cli'
 }
