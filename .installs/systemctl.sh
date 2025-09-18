@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 #  .--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--. 
 # / .. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \
 # \ \/\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ \/ /
@@ -18,20 +19,4 @@
 
 #Based on scripts by https://github.com/rickellis/ArchMatic
 
-echo
-echo "Installing"
-echo 
-
-PKGS ={
-  htop
-
-}
-
-for PKG in "${PKGS[@]}"; do
-    echo "INSTALLING: ${PKG}"
-    sudo pacman -S "$PKG" --noconfirm --needed
-done
-
-echo
-echo "Done!"
-echo
+sudo systemctl enable iwd
