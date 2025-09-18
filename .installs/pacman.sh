@@ -55,6 +55,13 @@ PKGS ={
 
   'bitwarden'
   'github-cli'
+
+  'signal-desktop'
+  'discord'
+
+  'fcitx5-im'
+  'fcitx5-chinese-addons'
+  'fcitx5-configtool'
 }
 
 for PKG in "${PKGS[@]}"; do
