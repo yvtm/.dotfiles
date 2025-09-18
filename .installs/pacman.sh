@@ -46,6 +46,13 @@ PKGS ={
 
   'swaync'
 
+  'noto-fonts-cjk'
+
+  'brightnessctl'
+  'alsa-utils'
+  'pavucontrol'
+  'spotify-launcher'
+
   'bitwarden'
   'github-cli'
 }
