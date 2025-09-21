@@ -33,6 +33,7 @@ PKGS ={
   'hyprlock'
   'neovim'
 
+  'swww'
   'wofi' 
 
   'thunderbird'
@@ -40,28 +41,14 @@ PKGS ={
   'thunar'
   'gvfs'
   'thunar-volman'
- 
-  'python-pip'
-  'python-pipx'
-
-  'swaync'
-
-  'noto-fonts-cjk'
-
-  'brightnessctl'
-  'alsa-utils'
-  'pavucontrol'
-  'spotify-launcher'
-
+  
   'bitwarden'
   'github-cli'
 
-  'signal-desktop'
-  'discord'
+  'feh'
 
-  'fcitx5-im'
-  'fcitx5-chinese-addons'
-  'fcitx5-configtool'
+  'vlc'
+  'qbittorent'
 }
 
 for PKG in "${PKGS[@]}"; do
