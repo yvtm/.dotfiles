@@ -25,6 +25,8 @@ alias dots="cd ~/.dotfiles"
 alias logout="hyprctl dispatch exit"
 alias bat="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 
+[[ "$TERM" == "xterm-kitty" ]] && alias ssh="TERM=xterm-256color ssh"
+
 gitdots() {
     if [ "$#" -eq 0 ]; then
         echo "Error: You must provide a commit message."

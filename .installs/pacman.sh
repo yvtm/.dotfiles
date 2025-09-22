@@ -41,7 +41,8 @@ PKGS ={
   'thunar'
   'gvfs'
   'thunar-volman'
-  
+  'tumbler'
+
   'bitwarden'
   'github-cli'
 
