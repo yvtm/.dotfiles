@@ -50,6 +50,9 @@ PKGS ={
 
   'vlc'
   'qbittorent'
+  
+  'net-tools'
+
 }
 
 for PKG in "${PKGS[@]}"; do
