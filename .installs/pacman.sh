@@ -53,6 +53,7 @@ PKGS ={
   
   'net-tools'
 
+  'imagemagick'
 }
 
 for PKG in "${PKGS[@]}"; do

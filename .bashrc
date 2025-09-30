@@ -25,6 +25,11 @@ alias dots="cd ~/.dotfiles"
 alias logout="hyprctl dispatch exit"
 alias bat="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 
+
+fcl(){
+  fc-list : family | grep -i "$1"
+}
+
 [[ "$TERM" == "xterm-kitty" ]] && alias ssh="TERM=xterm-256color ssh"
 
 gitdots() {
