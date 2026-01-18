@@ -6,10 +6,11 @@
   "modules-left": [
   "hyprland/workspaces",
   "custom/uptime",
-  "cpu"
+  "cpu",
+  "clock"
   ],
 
-  "modules-center": ["clock"],
+  "modules-center": ["custom/music"],
 
   "modules-right": [
     "custom/pomodoro",
@@ -18,13 +19,14 @@
     "pulseaudio", 
     "backlight",
     "battery",
+    "tray"
   ],
 
   "hyprland/workspaces": {
     "format": "{name}: {icon}",
     "format-icons": {
-      "active": "",
-      "default": ""
+      "active": " ",
+      "default": " " 
     }
   },
 
@@ -43,7 +45,7 @@
   },
 
   "custom/music": {
-    "format": "  {}",
+    "format": "{}",
     "escape": true,
     "interval": 5,
     "tooltip": false,
