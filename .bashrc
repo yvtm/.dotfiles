@@ -45,5 +45,7 @@ gitdots() {
     cd - >/dev/null || return
 }
 
+export PATH="$HOME/.npm-global/bin:$PATH"
+
 # Created by `pipx` on 2025-08-26 07:31:18
 export PATH="$PATH:/home/yv/.local/bin"

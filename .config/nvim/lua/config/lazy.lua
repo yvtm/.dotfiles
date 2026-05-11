@@ -106,4 +106,18 @@ require("lazy").setup({
       })
     end,
   },
+  {
+  "Julian/lean.nvim",
+  dependencies = {
+    "neovim/nvim-lspconfig",
+    "nvim-lua/plenary.nvim",
+  },
+  ft = { "lean" },
+  config = function()
+    require("lean").setup({
+      lsp = { on_attach = function(_, _) end },
+      mappings = true,
+    })
+  end,
+},
 })
